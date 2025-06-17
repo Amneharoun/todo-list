@@ -1,22 +1,31 @@
-body{
-    text-align: center; 
-       
-    }
-#container{
-    /*border: 4mm ridge rgba(211, 220, 50, 0.6);*/
-    border: thick double #32a1ce;
+body {
+    text-align: center;
+    margin-top: 10%;
+}
+
+#container {
+    border: 4mm ridge rgba(195, 27, 172, 0.6);
+    /*border: thick double #32a1ce;*/
     width: 30%;
     margin-left: 35%;
-background-color:bisque
+    background-color: bisque;
+    border-radius: 15px;
+
 
 }
-hr{
+
+hr {
     width: 80%;
     border-color: antiquewhite;
 }
-    
-#tasks li{
+
+#tasks li {
     text-align: left;
     margin-left: 20%;
 
+}
+
+.checked {
+    text-decoration: line-through;
+    color: rgba(46, 44, 44, 0.277);
 }

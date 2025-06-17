@@ -1,75 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>todo list</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div id="container">
         <div id="header">
-        <h1>La gestionnaire de tâches</h1>
+            <h1>La gestionnaire de tâches</h1>
+        </div>
+        <div>
+            <input type="text" class="inputField" id="inputField" placeholder="Ajouter une tâche">
+            <button id="addBtn" onclick="addTask()">Ajouter</button>
+        </div>
+
+        <h2> Listes de tâches</h2>
+
+        <hr>
+
+        <div class="filters">
+            <span class="active" id="all">Toutes <span id="allCounter">2</span></span>
+            <span id="all">En attentes <span id="pendingCounter">2</span></span>
+            <span id="completed">Terminées <span id="completedCounter">2</span></span>
+        </div>
+
+        <button class="clearBtn">Supprimer Toutes</button>
+
+        <hr>
+
+        <ul id="tasks">
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span>Appeler mama</span>
+                </label>
+                <span class="editBtn"><i class="fa-solid fa-pen-to-square"></i></span>
+                <span class="deleteBtn"><i class="fa-solid fa-trash"></i></span>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span>Faire le course</span>
+                </label>
+                <span class="editBtn"><i class="fa-solid fa-pen-to-square"></i></span>
+                <span class="deleteBtn"><i class="fa-solid fa-trash"></i></span>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span>Terminer mon travail</span>
+                </label>
+                <span class="editBtn"><i class="fa-solid fa-pen-to-square"></i></span>
+                <span class="deleteBtn"><i class="fa-solid fa-trash"></i></span>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span>Reviser mes cours</span>
+                </label>
+                <span class="editBtn"><i class="fa-solid fa-pen-to-square"></i></span>
+                <span class="deleteBtn"><i class="fa-solid fa-trash"></i></span>
+            </li>
+        </ul>
     </div>
-    <div>
-        <input type="text" class="inputField" id="inputField" placeholder="Ajouter une tâche">
-        <button id="addBtn" onclick="addTask()">Ajouter</button>
-    </div>
 
-    <h2> Listes de tâches</h2>
+    <footer>
+        <p>copyright &copy; tous droits reservés</p>
+    </footer>
 
-    <hr>
-
-    <div class="filters">
-        <span class="active" id="all">Toutes <span id="allCounter">2</span></span>
-        <span id="all">En attentes <span id="pendingCounter">2</span></span>
-        <span id="completed">Terminées <span id="completedCounter">2</span></span>
-    </div>
-    
-    <button class="clearBtn">Supprimer Toutes</button>
-
-    <hr>
-
-    <ul id="tasks">
-     <li>
-        <label>
-            <input type="checkbox">
-            <span>Appeler mama</span>
-        </label>
-        <span class="editBtn"><i class="fa-solid fa-pen-to-square"></i></span>
-        <span class="deleteBtn"><i class="fa-solid fa-trash"></i></span>
-     </li>
-     <li>
-        <label>
-            <input type="checkbox">
-            <span>Faire le course</span>
-        </label>
-        <span class="editBtn"><i class="fa-solid fa-pen-to-square"></i></span>
-        <span class="deleteBtn"><i class="fa-solid fa-trash"></i></span>
-     </li> <li>
-         <label>
-             <input type="checkbox">
-             <span>Terminer mon travail</span>
-            </label>
-            <span class="editBtn"><i class="fa-solid fa-pen-to-square"></i></span>
-            <span class="deleteBtn"><i class="fa-solid fa-trash"></i></span>
-        </li> <li>
-            <label>
-                <input type="checkbox">
-                <span>Reviser mes cours</span>
-            </label>
-            <span class="editBtn"><i class="fa-solid fa-pen-to-square"></i></span>
-            <span class="deleteBtn"><i class="fa-solid fa-trash"></i></span>
-        </li>
-    </ul>
-</div>
-
-<footer>
-    <p>copyright &copy; tous droits reservés</p>
-</footer>
-
-<script src="script.js"></script> 
+    <script src="script.js"></script>
 </body>
+
 </html>
