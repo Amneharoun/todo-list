@@ -27,8 +27,8 @@
 
         <div class="filters">
             <span class="active" id="all">Toutes <span id="allCounter">2</span></span>
-            <span id="all">En attentes <span id="pendingCounter">2</span></span>
-            <span id="completed">Terminées <span id="completedCounter">2</span></span>
+            <span id="all">En attentes <span id="pendingCounter" onclick="filters()">1</span></span>
+            <span id="completed">Terminées <span id="completedCounter" onclick="filters()"></span></span>
         </div>
 
         <button class="clearBtn">Supprimer Toutes</button>
@@ -39,7 +39,7 @@
             <li>
                 <label>
                     <input type="checkbox">
-                    <span>Appeler mama</span>
+                    <span class="checked">Appeler mama</span>
                 </label>
                 <span class="editBtn"><i class="fa-solid fa-pen-to-square"></i></span>
                 <span class="deleteBtn"><i class="fa-solid fa-trash"></i></span>
@@ -55,7 +55,15 @@
             <li>
                 <label>
                     <input type="checkbox">
-                    <span>Terminer mon travail</span>
+                    <span class="checked">Terminer mon travail</span>
+                </label>
+                <span class="editBtn"><i class="fa-solid fa-pen-to-square"></i></span>
+                <span class="deleteBtn"><i class="fa-solid fa-trash"></i></span>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span>Terminer </span>
                 </label>
                 <span class="editBtn"><i class="fa-solid fa-pen-to-square"></i></span>
                 <span class="deleteBtn"><i class="fa-solid fa-trash"></i></span>

@@ -29,3 +29,16 @@ hr {
     text-decoration: line-through;
     color: rgba(46, 44, 44, 0.277);
 }
+.filters{
+    margin: 0%;
+    justify-content: space-between;
+    
+#all{
+    border: 1mm ridge #94136b;
+
+}
+#completed{
+        border: 1mm ridge #94136b;
+
+}
+}
